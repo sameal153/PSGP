@@ -8,6 +8,7 @@
         <version>3.8.6</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+<!--    打包为jar包，切换时将jar修改为war-->
     <packaging>jar</packaging>
     <artifactId>ruoyi-admin</artifactId>
 

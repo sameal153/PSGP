@@ -59,5 +59,19 @@ com.ruoyi
 * 权限注解
 * Spring Security提供了Spring EL表达式，允许我们在定义接口访问的方法上面添加注解，来控制访问权限。
 
+## 公开接口
+* 如果有些接口是不需要验证权限可以公开访问的，这个时候就需要我们给接口放行。 使用注解方式，只需要在Controller的类或方法上加入@Anonymous该注解即可
 
+## 系统接口注解
+* 使用swagger对接口进行描述
+* 作用范围             API注解                    使用位置
+  协议集描述	          @Api	                 用于controller类上
+  对象属性	          @ApiModelProperty	     用在出入参数对象的字段上
+  协议描述	          @ApiOperation	         用在controller的方法上
+  Response集	      @ApiResponses	         用在controller的方法上
+  Response	          @ApiResponse	         用在 @ApiResponses里边
+  非对象参数集	      @ApiImplicitParams	 用在controller的方法上
+  非对象参数描述	      @ApiImplicitParam	     用在@ApiImplicitParams的方法里边
+  描述返回对象的意义	  @ApiModel	             用在返回对象类上
 
+## s
