@@ -1,8 +1,4 @@
 
-<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">Pspg v3.8.6</h1>
-<h4 align="center">基于SpringBoot+Vue前后端分离的Java快速开发框架</h4>
-
-
 ## 平台简介
 
 若依是一套全部开源的快速开发平台，毫无保留给个人及企业免费使用。
@@ -12,7 +8,6 @@
 * 权限认证使用Jwt，支持多终端认证系统。
 * 支持加载动态权限菜单，多方式轻松权限控制。
 * 高效率开发，使用代码生成器可以一键生成前后端代码。
-
 
 ## 内置功能
 
@@ -35,8 +30,30 @@
 17. 在线构建器：拖动表单元素生成相应的HTML代码。
 18. 连接池监视：监视当前系统数据库连接池状态，可进行分析SQL找出系统性能瓶颈。
 
+## 项目结构
+com.ruoyi     
+├── common            // 工具类
+│       └── annotation                    // 自定义注解
+│       └── config                        // 全局配置
+│       └── constant                      // 通用常量
+│       └── core                          // 核心控制
+│       └── enums                         // 通用枚举
+│       └── exception                     // 通用异常
+│       └── filter                        // 过滤器处理
+│       └── utils                         // 通用类处理
+├── framework         // 框架核心
+│       └── aspectj                       // 注解实现
+│       └── config                        // 系统配置
+│       └── datasource                    // 数据权限
+│       └── interceptor                   // 拦截器
+│       └── manager                       // 异步处理
+│       └── security                      // 权限控制
+│       └── web                           // 前端控制
+├── ruoyi-generator   // 代码生成（可移除）
+├── ruoyi-quartz      // 定时任务（可移除）
+├── ruoyi-system      // 系统代码
+├── ruoyi-admin       // 后台服务
+├── ruoyi-xxxxxx      // 其他模块
 
-
-
-
+## 后台手册  
 
