@@ -56,4 +56,8 @@ com.ruoyi
 ├── ruoyi-xxxxxx      // 其他模块
 
 ## 后台手册  
+* 权限注解
+* Spring Security提供了Spring EL表达式，允许我们在定义接口访问的方法上面添加注解，来控制访问权限。
+
+
 
