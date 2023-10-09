@@ -41,7 +41,7 @@ com.ruoyi
 │       └── exception                     // 通用异常
 │       └── filter                        // 过滤器处理
 │       └── utils                         // 通用类处理
-├── framework         // 框架核心（事务管理）
+├── framework                             // 框架核心（事务管理）
 │       └── aspectj                       // 注解实现
 │       └── config                        // 系统配置
 │       └── datasource                    // 数据权限
@@ -49,9 +49,9 @@ com.ruoyi
 │       └── manager                       // 异步处理
 │       └── security                      // 权限控制
 │       └── web                           // 前端控制
-├── ruoyi-generator   // 代码生成（可移除）
+├── ruoyi-generator   // 代码生成（可移除）自动生成bean等映射文件及vue前端
 ├── ruoyi-quartz      // 定时任务（可移除）
-├── ruoyi-system      // 系统代码
+├── ruoyi-system      // 系统代码（主要是bean类，接口类与实现类）
 ├── ruoyi-admin       // 后台服务（业务层直接和前端交互）
 ├── ruoyi-xxxxxx      // 其他模块
 
