@@ -32,7 +32,7 @@
 
 ## 项目结构
 com.ruoyi     
-├── common            // 工具类
+├── common            // 工具类（注解、过滤器，异常及工具类的封装）
 │       └── annotation                    // 自定义注解
 │       └── config                        // 全局配置
 │       └── constant                      // 通用常量
@@ -41,7 +41,7 @@ com.ruoyi
 │       └── exception                     // 通用异常
 │       └── filter                        // 过滤器处理
 │       └── utils                         // 通用类处理
-├── framework         // 框架核心
+├── framework         // 框架核心（事务管理）
 │       └── aspectj                       // 注解实现
 │       └── config                        // 系统配置
 │       └── datasource                    // 数据权限
@@ -52,8 +52,15 @@ com.ruoyi
 ├── ruoyi-generator   // 代码生成（可移除）
 ├── ruoyi-quartz      // 定时任务（可移除）
 ├── ruoyi-system      // 系统代码
-├── ruoyi-admin       // 后台服务
+├── ruoyi-admin       // 后台服务（业务层直接和前端交互）
 ├── ruoyi-xxxxxx      // 其他模块
+
+
+* 各个模块之间都有独立的pom.xml文件，各个模块之间通过引用类和@Autowired自动装配的方式进行通信。
+* 
+   
+
+
 
 ## 后台手册  
 * 权限注解
@@ -74,4 +81,4 @@ com.ruoyi
   非对象参数描述	      @ApiImplicitParam	     用在@ApiImplicitParams的方法里边
   描述返回对象的意义	  @ApiModel	             用在返回对象类上
 
-## s
+
