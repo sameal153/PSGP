@@ -8,7 +8,6 @@
         <version>3.8.6</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-<!--    打包为jar包，切换时将jar修改为war-->
     <packaging>jar</packaging>
     <artifactId>ruoyi-admin</artifactId>
 
@@ -38,28 +37,18 @@
             <version>1.6.2</version>
         </dependency>
 
-         <!-- Mysql驱动包
+         <!-- Mysql驱动包 -->
         <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <version>8.0.33</version>
-        </dependency>-->
-
-        <!--达梦8数据库驱动-->
-        <dependency>
-            <groupId>com.dameng</groupId>
-            <artifactId>DmJdbcDriver18</artifactId>
-            <version>8.1.2.141</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-
-
+        <!--DM驱动包-->
         <dependency>
             <groupId>com.dm</groupId>
             <artifactId>DmJdbcDriver</artifactId>
             <version>1.8.0</version>
         </dependency>
-
         <!-- 核心模块-->
         <dependency>
             <groupId>com.ruoyi</groupId>
@@ -76,6 +65,11 @@
         <dependency>
             <groupId>com.ruoyi</groupId>
             <artifactId>ruoyi-generator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ruoyi</groupId>
+            <artifactId>ruoyi-flowable</artifactId>
         </dependency>
 
     </dependencies>

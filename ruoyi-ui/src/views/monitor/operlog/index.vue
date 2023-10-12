@@ -1,15 +1,6 @@
 <template>
   <div class="app-container">
     <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch" label-width="68px">
-      <el-form-item label="操作地址" prop="operIp">
-        <el-input
-          v-model="queryParams.operIp"
-          placeholder="请输入操作地址"
-          clearable
-          style="width: 240px;"
-          @keyup.enter.native="handleQuery"
-        />
-      </el-form-item>
       <el-form-item label="系统模块" prop="title">
         <el-input
           v-model="queryParams.title"
@@ -238,7 +229,6 @@ export default {
       queryParams: {
         pageNum: 1,
         pageSize: 10,
-        operIp: undefined,
         title: undefined,
         operName: undefined,
         businessType: undefined,

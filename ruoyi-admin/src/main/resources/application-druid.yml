@@ -2,6 +2,7 @@
 spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
+#        driverClassName: com.mysql.cj.jdbc.Driver
         driverClassName: dm.jdbc.driver.DmDriver
         druid:
             # 主库数据源
@@ -9,7 +10,6 @@ spring:
                 url: jdbc:dm://localhost:5236/PSPG?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8
                 username: PSPG
                 password: 123456789
-                
             # 从库数据源
             slave:
                 # 从数据源开关/默认关闭
