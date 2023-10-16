@@ -7,7 +7,7 @@ spring:
         druid:
             # 主库数据源
             master:
-                url: jdbc:dm://localhost:5236/PSPG?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8
+                url: jdbc:dm://localhost:5286/PSPG?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8
                 username: PSPG
                 password: 123456789
             # 从库数据源
