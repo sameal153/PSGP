@@ -1,12 +1,12 @@
 @echo off
 echo.
-echo [ĞÅÏ¢] ´ò°üWeb¹¤³Ì£¬Éú³Éwar/jar°üÎÄ¼ş¡£
+echo [ä¿¡æ¯] å®‰è£…Webå·¥ç¨‹ï¼Œç”Ÿæˆnode_modulesæ–‡ä»¶ã€‚
 echo.
 
 %~d0
 cd %~dp0
 
 cd ..
-call mvn clean package -Dmaven.test.skip=true
+npm install --registry=https://registry.npmmirror.com
 
 pause
